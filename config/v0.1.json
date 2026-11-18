@@ -1,0 +1,17 @@
+{
+  "model": null,
+  "temperature": null,
+  "b_inject_chars": null,
+  "n_steps": null,
+  "search_limit": null,
+  "max_output_chars": null,
+  "embedding_model": null,
+  "note": "Null fields are still TBD. They are not tuned. pipeline_check_placeholders are only for the stub-model pipeline check.",
+  "pipeline_check_placeholders": {
+    "b_inject_chars": 800,
+    "n_steps": 6,
+    "search_limit": 3,
+    "max_output_chars": 2000
+  },
+  "evidence_min_chars": 20
+}

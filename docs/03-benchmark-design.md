@@ -2,7 +2,7 @@
 
 **这是设计，不是结果。** 下面没有测量值。凡是写成具体数量的地方，都是待定参数或建议的起点，开工前要写进配置并在日志里冻结。本设计不包含利用载荷、PoC 或攻击步骤。任务只要求代理判断缺陷是否存在、属于哪一类、位于何处、依据是哪段代码，并在交接后仍能答对。
 
-2026-11-18 把第 9 节问题 1、2、4 收成暂定决定，写在 [docs/paper/design-decisions.md](paper/design-decisions.md)。Juliet 文件名和注释如何泄题，写在 [docs/paper/juliet-sanitization.md](paper/juliet-sanitization.md)。本节以下正文不改写；若与那两份文件冲突，以那两份为准。
+2026-11-18 把第 9 节问题 1、2、4 收成暂定决定，写在 [docs/paper/design-decisions.md](paper/design-decisions.md)。Juliet 文件名和注释如何泄题，写在 [docs/paper/juliet-sanitization.md](paper/juliet-sanitization.md)。可运行骨架见 [docs/implementation.md](implementation.md)。本节以下正文不改写；若与那两份文件冲突，以那两份为准。
 
 ## 1. 研究问题
 
