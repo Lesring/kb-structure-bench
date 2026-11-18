@@ -9,3 +9,11 @@
 - 阅读了设计长文《女娲测试及其理论：Sapper-v2 的原理》（公众号，2026-11-18 打开）。文中的比赛数字按原文记录，未独立核验。文中提到的 V-Mesh 白皮书本次没有打开，因此不引用其中的成功率。
 - 相关工作和候选数据集只收录本次实际打开过页面或仓库文件的来源，列表见 [references.md](references.md)。
 - 已知的文档/代码不一致已经写进 [01-nvwabase.md](01-nvwabase.md)，不在 README 里抹平。
+
+## 2026-11-18（论文笔记）
+
+- PR #1 以 squash 提交 `102884db128807755746142849dedc458f2439c6` 进入 `main`。本轮从该提交之后的 `main` 开工，不改写已合并笔记的结论。
+- 新增 `docs/paper/`：大纲、主张与范围、文献笔记、Juliet 脱敏、v0.1 设计决定。仍无基准实现，无实验结果。
+- 新打开的主要来源包括 Juliet 1.2 用户指南、NIST TN 1995、PrimeVul 的 arXiv HTML、Magma 论文 PDF、Generative Agents、HippoRAG、A-Mem，以及 Cairn 的两篇公众号。书目见 [references.md](references.md) 与 [paper/literature.md](paper/literature.md)。
+- Cairn 的名次自述不一致：README 为第 3，一篇复盘写动态计分下为第 4，另一篇写全国第 3。这不是对旧笔记的更正（旧笔记只转述 README），而是不能把名次写进论文结果的附加理由。
+- 图臂决定为冻结适配器，字段对照 nvwabase 提交 `c9ec790a99c01641d566e38d8d7d7e6c63a24bcc`。没有下载 Juliet 官方 zip（约 146–153 MB）；脱敏协议依据用户指南，并用第三方仓库中的一个 CWE476 文件做了模式抽查。该镜像 README 写明改过部分 `bind()` 调用，不能代替官方包校验。

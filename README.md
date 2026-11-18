@@ -17,6 +17,11 @@
 | [docs/01-nvwabase.md](docs/01-nvwabase.md) | 对照源码核对后的 nvwabase / sapper-v2 笔记 |
 | [docs/02-related-work.md](docs/02-related-work.md) | 已打开来源的相关结构，以及谁进入 v1 |
 | [docs/03-benchmark-design.md](docs/03-benchmark-design.md) | v1 设计（设计，不是结果） |
+| [docs/paper/outline.md](docs/paper/outline.md) | 以后写文章用的大纲，不是已有结果的论文 |
+| [docs/paper/claims-and-scope.md](docs/paper/claims-and-scope.md) | 研究问题、计划中的贡献、明确不声称的事 |
+| [docs/paper/literature.md](docs/paper/literature.md) | 按相关工作分组的文献笔记 |
+| [docs/paper/design-decisions.md](docs/paper/design-decisions.md) | v0.1 的暂定决定（不是结果） |
+| [docs/paper/juliet-sanitization.md](docs/paper/juliet-sanitization.md) | Juliet 如何泄题，以及跑之前的脱敏协议 |
 | [docs/references.md](docs/references.md) | 本仓库引用过的 URL |
 | [docs/status.md](docs/status.md) | 日期日志 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 怎样追加来源和设计，而不写成未做的实验 |
@@ -34,4 +39,4 @@ v1 只比较少数几种**可以接到同一套读写接口**上的结构。设�
 
 ## 下一步
 
-最小的有信息量的一步是设计文档里的 **v0.1**：在剥离了标签泄漏的一小撮 Juliet C/C++ 1.3 用例上，跑“写入会话 + 只读知识库的交接”，三臂共用同一接口。开工前还要定的参数和未决问题列在 [docs/03-benchmark-design.md](docs/03-benchmark-design.md) 末尾。
+最小的有信息量的一步是设计文档里的 **v0.1**：在剥离了标签泄漏的一小撮 Juliet C/C++ 1.3 用例上，跑“写入会话 + 只读知识库的交接”，三臂共用同一接口。开工前还要定的参数和未决问题列在 [docs/03-benchmark-design.md](docs/03-benchmark-design.md) 末尾。论文向的大纲、文献和暂定决定在 [docs/paper/outline.md](docs/paper/outline.md)。
