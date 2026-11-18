@@ -1,0 +1,12 @@
+{
+  "note": "Paths exist only after prepare-tasks. This manifest is for the stub model. Answers are not measurements.",
+  "tasks": [
+    {"task_id": "t190", "source_dir": "data/tasks/agent/t190", "repeats": 1},
+    {"task_id": "t369", "source_dir": "data/tasks/agent/t369", "repeats": 1},
+    {"task_id": "t401", "source_dir": "data/tasks/agent/t401", "repeats": 1},
+    {"task_id": "t415", "source_dir": "data/tasks/agent/t415", "repeats": 1},
+    {"task_id": "t416", "source_dir": "data/tasks/agent/t416", "repeats": 1},
+    {"task_id": "t457", "source_dir": "data/tasks/agent/t457", "repeats": 1},
+    {"task_id": "t476", "source_dir": "data/tasks/agent/t476", "repeats": 1}
+  ]
+}

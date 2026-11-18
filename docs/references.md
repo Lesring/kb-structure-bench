@@ -55,3 +55,8 @@
 - Cairn 复盘（公众号）：<https://mp.weixin.qq.com/s/DlpEH7bVr0xi0VawPJs3XA>
 - Cairn《无径之径》（公众号）：<https://mp.weixin.qq.com/s/2rEqFLvkxvYWM3gW170C2w>
 - GraphRAG arXiv HTML 版本页（v2，2025-02-19）：<https://arxiv.org/html/2404.16130>
+
+## 2026-11-18 实现时新增
+
+- Juliet C/C++ 1.3 压缩包（已下载并在本机计算 sha256，与 SARD 页面摘要一致）：<https://zenodo.org/records/4701387>
+- SARD 套件页上的 sha256（对照用，不是本仓库发明的）：<https://samate.nist.gov/SARD/test-suites/112>

@@ -1,0 +1,48 @@
+{
+  "note": "Operator-side candidate list. Archive paths contain CWE numbers and must not be copied into an agent work directory. Gold labels are produced by kbbench prepare-tasks into data/, which is gitignored.",
+  "selection_rule": "Official Juliet C/C++ 1.3 zip whose sha256 matches the SARD suite 112 page. For each allowlisted CWE, the first single-file *_01.c that the sanitizer marks agent_ready, with no literal rewrite.",
+  "excluded": [
+    {
+      "cwe": "562",
+      "reason": "Both flow-01 files left identifier residuals containing helperBad and helperGood. They are not in the agent-facing list."
+    }
+  ],
+  "rationale": "Seven files, not the design's unresolved 16-task split. Each file still contains both the flawed function and the non-flawed functions, so the gold label is the sanitized id of the flawed function plus the CWE parsed from the original path. Files whose only leftover was the string Good, and the class-based _bad.cpp/_good1.cpp pair, were spot-checked and left out instead of rewriting literals.",
+  "tasks": [
+    {
+      "task_id": "t190",
+      "archive_member": "C/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 190."
+    },
+    {
+      "task_id": "t369",
+      "archive_member": "C/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_connect_socket_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 369."
+    },
+    {
+      "task_id": "t401",
+      "archive_member": "C/testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__char_calloc_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 401."
+    },
+    {
+      "task_id": "t415",
+      "archive_member": "C/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 415."
+    },
+    {
+      "task_id": "t416",
+      "archive_member": "C/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 416."
+    },
+    {
+      "task_id": "t457",
+      "archive_member": "C/testcases/CWE457_Use_of_Uninitialized_Variable/s01/CWE457_Use_of_Uninitialized_Variable__char_pointer_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 457."
+    },
+    {
+      "task_id": "t476",
+      "archive_member": "C/testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__binary_if_01.c",
+      "rationale": "First agent-ready flow-01 file under CWE 476. The char_01 file was spot-checked and excluded because the literal Good remained."
+    }
+  ]
+}
